@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hiring_task_fawad/constants/text_styles.dart';
@@ -105,7 +107,7 @@ class _NavBarScreenState extends State<NavBarScreen> {
             child: const Text("Cancel"),
           ),
           TextButton(
-            onPressed: () => Navigator.of(context).pop(true), // Confirm Exit
+            onPressed: () => exit(0), // Confirm Exit
             child: const Text("Exit"),
           ),
         ],
